@@ -1,0 +1,49 @@
+# Backup-Testdaten und Restore-Ziele
+/testdata/
+/restore-test/
+/backup-data/
+/restore-data/
+/generated-*/
+/test-output/
+
+# Manifeste innerhalb beliebiger generierter Datenverzeichnisse
+**/.backup_manifests/
+
+# Restore-Prüfberichte
+restore_verification_*.json
+**/restore_verification_*.json
+
+# Große, vom Generator erzeugte Datendateien
+*.bin
+*.dat
+*.img
+*.sparse
+
+# Temporäre und unvollständige Dateien
+*.tmp
+*.part
+*.partial
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtuelle Umgebungen
+.venv/
+venv/
+env/
+
+# IDE und Betriebssystem
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
